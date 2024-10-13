@@ -1,0 +1,1132 @@
+@import url("https://fonts.googleapis.com/css2?family=Share:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #04090d;
+}
+
+/* 
+header + navbar
+----------------------------------------------------------------------
+-----------------------------------------------------------------------
+*/
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header-preview {
+  background-color: #262626;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.evato-market-logo {
+  text-transform: lowercase;
+  text-decoration: none;
+  font-family: cursive;
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+}
+
+.evato-market-logo span {
+  color: green;
+}
+
+.header-preview .buy-now {
+  padding: 5px 20px;
+  background-color: #82b440;
+  color: white;
+  border-radius: 5px;
+  border-color: transparent;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+
+.header-preview .buy-now:hover {
+  background-color: transparent;
+  border: 2px solid #82b440;
+}
+
+nav {
+  background-color: #1d1f22;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo img {
+  width: 125px;
+  cursor: pointer;
+}
+
+nav .nav-words > ul {
+  display: flex;
+  gap: 40px;
+}
+
+nav .nav-words > ul li {
+  list-style: none;
+  position: relative;
+}
+
+nav .nav-words > ul > li > a {
+  padding-bottom: 30px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #6d727d;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+/* nav .nav-words ul li .dropdown-toggler:focus + .dropdown {
+  display: block;
+} */
+
+/* nav .nav-words ul li .dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  background-color: #000;
+  width: 100%;
+  transform-origin: top;
+  animation: sliding-down 0.3s;
+} */
+
+/* nav .nav-words ul li .dropdown li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+} */
+
+/* @keyframes sliding-down {
+  from {
+    opacity: 0;
+    transform: scaleY(0.4);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+} */
+
+nav .nav-words > ul > li > a:hover {
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: x-large;
+}
+
+nav .nav-icons {
+  word-spacing: 10px;
+  padding-right: 5px;
+}
+
+nav .nav-icons i {
+  font-size: 20px;
+  color: #6d727d;
+  transition: 0.4s;
+}
+
+nav .nav-icons i:hover {
+  color: white;
+}
+
+/* 
+section1   home
+----------------------------------------------------------------------
+-----------------------------------------------------------------------
+*/
+
+.sec1 {
+  background-image: url(../imgs/slide-1.jpg);
+  height: calc(100vh - 86.38px);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: show 3s
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sec1 div {
+  padding: 25px;
+  width: 400px;
+}
+
+.sec1 span {
+  display: block;
+  color: white;
+  font-family: "Share", sans-serif;
+  font-size: 60px;
+  animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.sec1 div :first-child,
+.sec1 div :nth-child(2) {
+  color: #626369;
+}
+
+/* 
+section2  latest releases
+----------------------------------------------------------------------
+-----------------------------------------------------------------------
+*/
+
+.sec2 {
+  padding: 20px 10px;
+}
+
+.sec2 h2 {
+  border-bottom: 2px solid #626369;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  font-family: "Share", sans-serif;
+  font-size: 32px;
+}
+
+.LATEST-RELEASES {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.LATEST-RELEASES div {
+  width: 400px;
+  border: 1px solid #1d1f22;
+  overflow: hidden;
+}
+
+.LATEST-RELEASES img {
+  width: 100%;
+  transition: 0.4s;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.LATEST-RELEASES img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.LATEST-RELEASES h3 {
+  font-size: 25px;
+  font-family: cursive;
+  margin: 15px;
+}
+
+.LATEST-RELEASES p {
+  color: #737678;
+  font-family: "Share", sans-serif;
+  line-height: 20px;
+  font-size: 15px;
+  margin: 20px;
+}
+
+.LATEST-RELEASES button {
+  background-color: #1d1f22;
+  padding: 12px 20px;
+  margin: 20px;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: system-ui;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.4s;
+}
+
+.LATEST-RELEASES button:hover {
+  background-color: #45148f;
+}
+
+.More-Releases {
+  text-align: center;
+}
+
+.More-Releases a {
+  text-decoration: none;
+  background-image: linear-gradient(0deg, #290531, #090c45);
+  padding: 15px 20px;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  margin: 25px;
+  border: 2px solid transparent;
+  transition: 0.4s;
+  font-family: "Share", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.More-Releases a:hover {
+  border: 2px solid white;
+}
+
+/* 
+section3  our company
+----------------------------------------------------------------------
+-----------------------------------------------------------------------
+*/
+
+.sec3 {
+  background-image: url(../imgs/home-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 840px;
+}
+
+.sec3 h2 {
+  border-bottom: 2px solid #626369;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  font-family: "Share", sans-serif;
+  font-size: 32px;
+}
+
+.sec3 article {
+  width: 50%;
+  padding: 20px;
+}
+
+.sec3 span {
+  display: block;
+  color: white;
+  font-family: "Share", sans-serif;
+  font-size: 50px;
+}
+
+.sec3 .sec3-p {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+  width: 50%;
+}
+
+.sec3-p p {
+  font-family: cursive;
+  font-size: 16px;
+  color: #626369;
+}
+
+/* 
+section4  what we do
+----------------------------------------------------------------------
+-----------------------------------------------------------------------
+*/
+
+.sec4 {
+  padding: 25px;
+}
+
+.sec4 > h2 {
+  border-bottom: 2px solid #626369;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  font-family: "Share", sans-serif;
+  font-size: 32px;
+}
+
+.sec4 .what-we-do {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.sec4 .what-we-do > div {
+  width: 400px;
+  display: flex;
+  border: 1px solid #1d1f22;
+  flex-direction: column;
+  align-items: center;
+}
+
+.what-we-do .img-wrapper img {
+  width: 155px;
+}
+
+.what-we-do .title h2 {
+  font-family: cursive;
+}
+
+.what-we-do .paragraph p {
+  font-family: cursive;
+  margin: 20px 0;
+  color: #626369;
+  padding: 0px 30px;
+}
+
+.what-we-do .link {
+  align-self: flex-start;
+  padding: 10px;
+}
+
+.what-we-do .link a {
+  text-decoration: none;
+  text-align: start;
+  color: #55d689;
+  font-family: "Share", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 5px;
+  transition: 0.4s;
+}
+
+.what-we-do a:hover {
+  color: white;
+}
+
+/* 
+section5  our newsletter
+----------------------------------------------------------------------
+-----------------------------------------------------------------------
+*/
+
+.sec5 {
+  padding: 20px 10px;
+}
+
+.sec5 h2 {
+  border-bottom: 2px solid #626369;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  font-family: "Share", sans-serif;
+  font-size: 32px;
+}
+
+.sec5 > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  height: 200px;
+}
+
+.sec5 div p {
+  color: #626369;
+  font-family: system-ui;
+}
+
+.sign-up {
+  display: flex;
+}
+
+.sign-up :first-child {
+  width: 400px;
+  height: 50px;
+  background-color: transparent;
+  border-width: 0px 0px 1px 0px;
+  border-bottom: 1px solid wheat;
+  transition: 0.4s;
+}
+
+.sign-up :first-child:focus {
+  border-bottom: 1px solid #55d689;
+  outline: transparent;
+}
+
+.placeholder {
+  color: white;
+}
+
+.sign-up :nth-child(2) {
+  width: 80px;
+  height: 50px;
+  font-size: medium;
+  color: black;
+  border: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.sign-up :nth-child(2):hover {
+  color: white;
+  background-color: #55d689;
+}
+
+/* 
+footer  contact us
+----------------------------------------------------------------------
+-----------------------------------------------------------------------
+*/
+
+footer {
+  height: 500px;
+  background-image: linear-gradient(to bottom, #000000, rgb(85 214 137 / 11%));
+  padding: 20px;
+}
+
+footer .footer-items {
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-items a {
+  text-decoration: none;
+  color: #626369;
+  font-family: "Share", sans-serif;
+  width: fit-content;
+  transition: 0.4s;
+}
+
+.footer-items a:hover {
+  color: white;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 45px;
+}
+
+.column1 img {
+  width: 60px;
+}
+
+.column1 p {
+  color: #626369;
+  font-family: system-ui;
+  font-weight: 500;
+  width: 70%;
+}
+
+.column1 .column1-icons {
+  word-spacing: 20px;
+}
+
+.column1 .column1-icons a i {
+  color: #6d727d;
+  font-size: 25px;
+  transition: 0.4s;
+}
+
+.column1 .column1-icons a i:hover {
+  color: white;
+  font-size: 30px;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 290px;
+  gap: 25px;
+}
+
+h4 {
+  color: #55d689;
+  font-family: "Share", sans-serif;
+}
+
+.column2 i {
+  color: #55d689;
+  font-size: 15px;
+}
+
+.column3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 290px;
+  gap: 25px;
+}
+
+.column3 i {
+  color: #55d689;
+  font-size: 15px;
+}
+
+.column4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 290px;
+  gap: 25px;
+}
+
+.column4 i {
+  color: #55d689;
+  font-size: 15px;
+}
+
+footer hr {
+  width: 10%;
+}
+
+footer > p {
+  padding: 14px;
+}
+
+
+
+/*---------- humberger menu---------------
+------------------------------------
+-------------------------------------*/
+
+#menu {
+  display: none;
+  margin-right: 10px;
+  position: relative;
+  right: 15px;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  user-select: none;
+  z-index: 200;
+}
+
+#menu span{
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: grey;
+  transform-origin: 0 0;
+  transition: 0.4s;
+  margin-bottom: 5px;
+}
+
+#menu.is-active span:nth-child(1){
+  transform: translate(0px, -2px) rotate(45deg);
+}
+
+#menu.is-active span:nth-child(2){
+  opacity: 0;
+  transform: translateX(15px);
+}
+
+#menu.is-active span:nth-child(3){
+  transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+#menu.is-active span{
+  background-color: rgb(37, 59, 255);
+}
+
+
+
+
+
+/* 
+media
+----------------------------------------------------------------------
+-----------------------------------------------------------------------
+*/
+
+/* phone*/
+
+@media screen and (max-width: 575px) {
+  nav .nav-words ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    top: 86px;
+    left: 0;
+    right: 0;
+    background-color: rgb(29 31 34 / 99%);
+  }
+
+  nav .nav-words > ul.is-active{
+    display: flex;
+  }
+
+  nav .nav-words > ul > li > a {
+    padding-bottom: unset;
+}
+
+nav .nav-words > ul > li > a:hover {
+  border-bottom: 1px solid transparent;
+}
+
+#menu {
+  display: block;
+}
+
+  nav .nav-icons {
+    word-spacing: 10px;
+    padding-right: 5px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .sec1 div {
+    width: unset;
+  }
+
+  .sec1 {
+    height: 510px;
+    background-size: contain;
+  }
+
+  .sec1 span {
+    font-size: 25px;
+  }
+
+  .sec2 h2 {
+    font-size: 20px;
+  }
+
+  .sec3 {
+    background-image: none;
+    height: unset;
+  }
+
+  .sec3 article {
+    width: unset;
+    padding: 20px;
+  }
+
+  .sec3 .sec3-p {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+    width: unset;
+  }
+
+  .what-we-do img {
+    width: 120px;
+  }
+
+  .sec5 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: unset;
+    gap: 50px;
+    height: 200px;
+  }
+
+  .sign-up :first-child {
+    width: 100%;
+  }
+
+  footer {
+    height: unset;
+  }
+
+  footer .footer-items {
+    flex-direction: column;
+  }
+
+  .column1 {
+    align-items: center;
+  }
+}
+
+/* phone rotate */
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  nav .nav-words ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    top: 86px;
+    left: 0;
+    right: 0;
+    background-color: rgb(29 31 34 / 99%);
+  }
+
+  nav .nav-words > ul.is-active{
+    display: flex;
+  }
+
+  nav .nav-words > ul > li > a {
+    padding-bottom: unset;
+}
+
+nav .nav-words > ul > li > a:hover {
+  border-bottom: 1px solid transparent;
+}
+
+#menu {
+  display: block;
+}
+
+  nav .nav-icons {
+    word-spacing: 10px;
+    padding-right: 5px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .sec1 div {
+    width: unset;
+  }
+
+  .sec1 {
+    height: 250px;
+    background-size: cover;
+  }
+
+  .sec1 span {
+    font-size: 25px;
+  }
+
+  .sec2 h2 {
+    font-size: 20px;
+  }
+
+  .LATEST-RELEASES {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec3 {
+    background-image: none;
+    height: unset;
+  }
+
+  .sec3 article {
+    width: unset;
+    padding: 20px;
+  }
+
+  .sec3 span {
+    display: inline-block;
+  }
+
+  .sec3 .sec3-p {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+    width: unset;
+  }
+
+  .what-we-do img {
+    width: 120px;
+  }
+
+  .sec4 .what-we-do {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec5 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: unset;
+    gap: 50px;
+    height: 200px;
+  }
+
+  .sign-up :first-child {
+    width: 100%;
+  }
+
+  footer {
+    height: unset;
+    padding: unset;
+  }
+
+  footer .footer-items {
+    gap: 18px;
+  }
+
+  .column1 {
+    align-items: center;
+    width: 400px;
+  }
+
+  .column1 img {
+    padding-top: 40px;
+  }
+
+  .column1 .column1-icons {
+    word-spacing: 12px;
+  }
+
+  footer > p {
+    padding: 20px;
+  }
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  nav .nav-words ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    top: 86px;
+    left: 0;
+    right: 0;
+    background-color: rgb(29 31 34 / 99%);
+  }
+
+  nav .nav-words > ul.is-active{
+    display: flex;
+  }
+
+  nav .nav-words > ul > li > a {
+    padding-bottom: unset;
+}
+
+nav .nav-words > ul > li > a:hover {
+  border-bottom: 1px solid transparent;
+}
+
+#menu {
+  display: block;
+}
+
+  nav .nav-icons {
+    word-spacing: 10px;
+    padding-right: 5px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .sec1 div {
+    width: unset;
+  }
+
+  .sec1 {
+    height: 740px;
+    background-size: cover;
+  }
+
+  .sec1 span {
+    font-size: 50px;
+  }
+
+  .sec2 h2 {
+    font-size: 20px;
+  }
+
+  .LATEST-RELEASES {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec3 {
+    background-image: none;
+    height: unset;
+  }
+
+  .sec3 article {
+    width: unset;
+    padding: 20px;
+  }
+
+  .sec3 span {
+    display: inline-block;
+  }
+
+  .sec3 .sec3-p {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+    width: unset;
+  }
+
+  .what-we-do img {
+    width: 120px;
+  }
+
+  .sec4 .what-we-do {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec5 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: unset;
+    gap: 50px;
+    height: 200px;
+  }
+
+  .sign-up :first-child {
+    width: 100%;
+  }
+
+  footer {
+    height: unset;
+    padding: unset;
+  }
+
+  footer .footer-items {
+    gap: 18px;
+  }
+
+  .column1 {
+    align-items: center;
+    width: 400px;
+  }
+
+  .column1 img {
+    padding-top: 40px;
+  }
+
+  .column1 .column1-icons {
+    word-spacing: 12px;
+  }
+
+  footer > p {
+    padding: 20px;
+  }
+}
+
+/* tablet rotate */
+
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+  nav .nav-words > ul {
+    display: flex;
+  }
+
+  .nav-words {
+    padding: 10px;
+  }
+
+  nav .nav-icons {
+    word-spacing: 10px;
+    padding-right: 30px;
+    width: unset;
+    text-align: center;
+  }
+
+  .sec1 div {
+    width: unset;
+  }
+
+  .sec1 {
+    height: 700px;
+    background-size: cover;
+  }
+
+  .sec1 span {
+    font-size: 50px;
+  }
+
+  .sec2 h2 {
+    font-size: 20px;
+  }
+
+  .LATEST-RELEASES {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sec3 span {
+    margin-left: 50px;
+  }
+
+  .sec3 .sec3-p {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+  }
+
+  .what-we-do img {
+    width: 120px;
+  }
+
+  .sec4 .what-we-do {
+    display: flex;
+    align-items: center;
+  }
+
+  .sec5 > div {
+    display: flex;
+    justify-content: space-around;
+    gap: unset;
+    height: 200px;
+  }
+
+  .sign-up :first-child {
+    width: 100%;
+  }
+
+  footer {
+    height: unset;
+    padding: unset;
+  }
+
+  footer .footer-items {
+    gap: 18px;
+  }
+
+  .column1 {
+    align-items: center;
+    width: 400px;
+  }
+
+  .column1 img {
+    padding-top: 40px;
+  }
+
+  .column1 .column1-icons {
+    word-spacing: 12px;
+  }
+
+  footer > p {
+    padding: 20px;
+  }
+}
